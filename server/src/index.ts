@@ -33,8 +33,6 @@ import User from "./models/User";
 
   app.use(express.urlencoded({ extended: true }));
 
-  app.use("/image", express.static("src/public/images"));
-
   app.use("/home", homeRoute);
   app.use("/post", postRoute);
   app.use("/category", categoryRoute);
